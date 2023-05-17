@@ -4,36 +4,17 @@ const CostForm = (props) => {
   const [inputName, setInputName] = useState("");
   const [inputAmount, setInputAmount] = useState("");
   const [inputDate, setInputDate] = useState("");
-  //   const [userInput, setuserInput] = useState({
-  //     name: "",
-  //     amount: "",
-  //     date: "",
-  //   });
 
   const nameChangeHandle = (event) => {
     setInputName(event.target.value);
   };
   const amountChangeHandle = (event) => {
     setInputAmount(event.target.value);
-    // setuserInput({
-    //   ...userInput,
-    //   amount: event.target.value,
-    // });
-    // setuserInput((previousState)=>{ -------> завжди юзати коли залежить від старого стану,
-    //     return {
-    //         ...previousState,
-    //         amount: event.target.value,
-    //     }
-
-    // })
   };
   const dateChangeHandle = (event) => {
     setInputDate(event.target.value);
-    // setuserInput({
-    //   ...userInput,
-    //   date: event.target.value,
-    // });
   };
+
   const sumbitHandle = (event) => {
     event.preventDefault();
 
