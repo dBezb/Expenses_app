@@ -32,11 +32,11 @@ const CostForm = (props) => {
     <form onSubmit={sumbitHandle}>
       <div className="new-cost__controls">
         <div className="new-cost__control">
-          <label>Назва</label>
+          <label>Title</label>
           <input type="text" onChange={nameChangeHandle} value={inputName} />
         </div>
         <div className="new-cost__control">
-          <label>Ціна</label>
+          <label>Price</label>
           <input
             type="number"
             min="0.01"
@@ -46,7 +46,7 @@ const CostForm = (props) => {
           />
         </div>
         <div className="new-cost__control">
-          <label>Дата</label>
+          <label>Date</label>
           <input
             type="date"
             min="2020-01-01"
@@ -56,9 +56,9 @@ const CostForm = (props) => {
           />
         </div>
         <div className="new-cost__actions">
-          <button type="submit">Додати витрату</button>
+          <button type="submit">Add an expense</button>
           <button type="button" onClick={props.onCostCancel}>
-            Відміна
+            Abolition
           </button>
         </div>
       </div>

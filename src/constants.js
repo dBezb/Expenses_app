@@ -2,7 +2,7 @@ export const INITIAL_COSTS = [
   {
     id: "c1",
     date: new Date(2023, 5, 4),
-    description: "Холодильник",
+    description: "Refrigerator",
     amount: 999.99,
   },
   {
